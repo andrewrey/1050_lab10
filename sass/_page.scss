@@ -1,0 +1,41 @@
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background: linear-gradient(to top, white, grey, black);
+  border: 1px solid red;
+}
+
+.banner_img__wrap {
+  width: 200px;
+}
+
+img {
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+main {
+  padding-top: 50px;
+}
+
+.wrap {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+
+  .section__wrap {
+    display: flex;
+    margin-top: 100px;
+  }
+  .home {
+    flex-basis: 50%;
+    border: 1px solid red;
+  }
+  .major {
+    flex-basis: 50%;
+    border: 1px solid green;
+  }
+}
