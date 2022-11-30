@@ -26,7 +26,6 @@ header {
   height: 30vh;
   background: -webkit-gradient(linear, left bottom, left top, from(white), color-stop(grey), to(black));
   background: linear-gradient(to top, white, grey, black);
-  border: 1px solid red;
 }
 
 .banner_img__wrap {
@@ -48,6 +47,10 @@ main {
   text-align: center;
 }
 
+.wrap h2 {
+  margin-bottom: 50px;
+}
+
 .wrap .section__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -58,12 +61,19 @@ main {
 .wrap .home {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  border: 1px solid red;
 }
 
-.wrap .major {
+.wrap .favorites {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  border: 1px solid green;
+}
+
+.card {
+  padding: 15px;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 25px;
+  -webkit-box-shadow: 2px 2px 8px 6px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 8px 6px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=main.css.map */
