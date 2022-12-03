@@ -1,7 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -20,13 +26,18 @@ header {
 header .header__card {
   width: 400px;
   background-color: white;
-  padding: 15px;
-  height: 300px;
+  padding: 25px;
   position: absolute;
   bottom: -230px;
   right: -400px;
   border-radius: 50px;
   box-shadow: 3px 4px 8px 3px rgba(103, 103, 103, 0.25);
+}
+header .header__card h1 {
+  margin-bottom: 25px;
+}
+header .header__card p + p {
+  margin-top: 10px;
 }
 header .flex__wrap {
   display: flex;
@@ -51,4 +62,44 @@ header .profile_img {
 header .profile_img img {
   border-radius: 50%;
   display: block;
+}
+
+main {
+  background-color: #aed1e7;
+  padding: 50px;
+  text-align: center;
+}
+main .content__wrap {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+main .content__wrap h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+main .courses {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+main .courses__card {
+  border-radius: 10px;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 250px;
+  height: 200px;
+}
+main .courses__card .icon_wrap {
+  width: 100px;
+  margin-bottom: 1.5rem;
+  background-color: #927940;
+  border-radius: 50%;
+  padding: 20px;
 }/*# sourceMappingURL=main.css.map */
