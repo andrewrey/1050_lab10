@@ -4,7 +4,7 @@ $blue: #aed1e7;
 $darkGrey: #2e353f;
 
 header {
-  min-height: 90vh;
+  min-height: 95vh;
   // border: 1px solid red;
   display: flex;
   justify-content: center;
@@ -66,10 +66,12 @@ main {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
+    // border: 2px solid blue;
   }
 
   .courses {
-    padding: 50px 0;
+    padding: 100px 0;
     border: 2px solid red;
     .course_flex {
       display: flex;
@@ -107,8 +109,12 @@ main {
 
   .hobbies {
     background-color: $darkGrey;
-    min-height: 30vh;
+    min-height: 68vh;
     padding: 50px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     &__card {
       text-align: left;
       color: white;
@@ -130,6 +136,89 @@ main {
       li {
         border: 1px solid white;
         padding: 10px;
+      }
+    }
+    .hobbies__svg-wrap {
+      position: absolute;
+      right: 160px;
+      top: -145px;
+      width: 600px;
+      // border: 2px solid green;
+      svg {
+        width: 100%;
+        // border: 2px solid blue;
+        path {
+          fill: rgba($red, 0.25);
+          &.blue {
+            fill: rgba($blue, 0.25);
+          }
+        }
+      }
+    }
+  }
+  .faq {
+    min-height: 40vh;
+    padding: 40px 0;
+    h2 {
+      margin-bottom: 25px;
+    }
+    details {
+      margin-bottom: 2.5rem;
+      div {
+        margin-top: 25px;
+        &.summary_flex {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            background-color: white;
+            padding: 8px;
+          }
+        }
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+        gap: 5px;
+
+        justify-content: center;
+        align-items: center;
+        li {
+          padding: 8px;
+          background-color: white;
+        }
+      }
+    }
+    summary {
+      background-color: $red;
+      padding: 10px 0;
+      color: white;
+      cursor: pointer;
+    }
+  }
+}
+
+footer {
+  background-color: $darkGrey;
+  text-align: center;
+  padding: 25px;
+  color: white;
+  ul {
+    margin: 0 auto;
+    // border: 2px solid purple;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    li {
+      width: 50px;
+      // border: 2px solid green;
+      a {
+        display: block;
       }
     }
   }

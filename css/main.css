@@ -12,10 +12,11 @@ body {
 
 img {
   width: 100%;
+  display: block;
 }
 
 header {
-  min-height: 90vh;
+  min-height: 95vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -72,9 +73,10 @@ main .content__wrap {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 main .courses {
-  padding: 50px 0;
+  padding: 100px 0;
   border: 2px solid red;
 }
 main .courses .course_flex {
@@ -108,8 +110,12 @@ main .courses__card .icon_wrap {
 }
 main .hobbies {
   background-color: #2e353f;
-  min-height: 30vh;
+  min-height: 68vh;
   padding: 50px 0;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 main .hobbies__card {
   text-align: left;
@@ -132,4 +138,81 @@ main .hobbies ul {
 main .hobbies ul li {
   border: 1px solid white;
   padding: 10px;
+}
+main .hobbies .hobbies__svg-wrap {
+  position: absolute;
+  right: 160px;
+  top: -145px;
+  width: 600px;
+}
+main .hobbies .hobbies__svg-wrap svg {
+  width: 100%;
+}
+main .hobbies .hobbies__svg-wrap svg path {
+  fill: rgba(207, 42, 48, 0.25);
+}
+main .hobbies .hobbies__svg-wrap svg path.blue {
+  fill: rgba(174, 209, 231, 0.25);
+}
+main .faq {
+  min-height: 40vh;
+  padding: 40px 0;
+}
+main .faq h2 {
+  margin-bottom: 25px;
+}
+main .faq details {
+  margin-bottom: 2.5rem;
+}
+main .faq details div {
+  margin-top: 25px;
+}
+main .faq details div.summary_flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .faq details div.summary_flex p {
+  background-color: white;
+  padding: 8px;
+}
+main .faq details ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+main .faq details ul li {
+  padding: 8px;
+  background-color: white;
+}
+main .faq summary {
+  background-color: #cf2a30;
+  padding: 10px 0;
+  color: white;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #2e353f;
+  text-align: center;
+  padding: 25px;
+  color: white;
+}
+footer ul {
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+footer ul li {
+  width: 50px;
+}
+footer ul li a {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
