@@ -9,23 +9,32 @@ img {
 }
 
 header {
-  min-height: 50vh;
-  border: 1pxs solid red;
+  min-height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #2e353f;
+  position: relative;
+  z-index: -2;
+}
+header .flex__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: 150px;
+  bottom: 50px;
 }
 header .svg {
   position: absolute;
-  border: 1px solid yellow;
-  width: 400px;
+  z-index: -1;
+  width: 800px;
 }
 header .svg svg {
   width: 100%;
 }
 header .profile_img {
-  width: 300px;
-  border: 2px solid green;
+  width: 350px;
   border-radius: 50%;
 }
 header .profile_img img {

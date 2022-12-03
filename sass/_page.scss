@@ -1,20 +1,38 @@
+$gold: #927940;
+$red: #cf2a30;
+$blue: #aed1e7;
+$darkGrey: #2e353f;
+
 header {
-  min-height: 50vh;
-  border: 1pxs solid red;
+  min-height: 90vh;
+  // border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $darkGrey;
+  position: relative;
+  z-index: -2;
+  .flex__wrap {
+    // border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: 150px;
+    bottom: 50px;
+  }
   .svg {
     position: absolute;
-    border: 1px solid yellow;
-    width: 400px;
+    z-index: -1;
+    // border: 1px solid yellow;
+    width: 800px;
     svg {
       width: 100%;
     }
   }
   .profile_img {
-    width: 300px;
-    border: 2px solid green;
+    width: 350px;
+    // border: 2px solid green;
     border-radius: 50%;
     img {
       border-radius: 50%;
