@@ -66,7 +66,6 @@ header .profile_img img {
 
 main {
   background-color: #aed1e7;
-  padding: 50px;
   text-align: center;
 }
 main .content__wrap {
@@ -74,16 +73,20 @@ main .content__wrap {
   max-width: 1200px;
   margin: 0 auto;
 }
-main .content__wrap h2 {
-  font-size: 2.5rem;
-  margin-bottom: 50px;
-}
 main .courses {
+  padding: 50px 0;
+  border: 2px solid red;
+}
+main .courses .course_flex {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 30px;
+}
+main .courses h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
 }
 main .courses__card {
   border-radius: 10px;
@@ -102,4 +105,31 @@ main .courses__card .icon_wrap {
   background-color: #927940;
   border-radius: 50%;
   padding: 20px;
+}
+main .hobbies {
+  background-color: #2e353f;
+  min-height: 30vh;
+  padding: 50px 0;
+}
+main .hobbies__card {
+  text-align: left;
+  color: white;
+  width: 300px;
+}
+main .hobbies__card h2 {
+  margin-bottom: 30px;
+}
+main .hobbies__card p {
+  line-height: 1.8;
+}
+main .hobbies ul {
+  margin-top: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+main .hobbies ul li {
+  border: 1px solid white;
+  padding: 10px;
 }/*# sourceMappingURL=main.css.map */

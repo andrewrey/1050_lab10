@@ -60,24 +60,28 @@ header {
 
 main {
   background-color: #aed1e7;
-  padding: 50px;
+  // padding: 50px 0;
   text-align: center;
   .content__wrap {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .courses {
+    padding: 50px 0;
+    border: 2px solid red;
+    .course_flex {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
     h2 {
       font-size: 2.5rem;
       margin-bottom: 50px;
     }
-  }
-
-  .courses {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
   }
 
   .courses__card {
@@ -98,6 +102,35 @@ main {
       background-color: $gold;
       border-radius: 50%;
       padding: 20px;
+    }
+  }
+
+  .hobbies {
+    background-color: $darkGrey;
+    min-height: 30vh;
+    padding: 50px 0;
+    &__card {
+      text-align: left;
+      color: white;
+      width: 300px;
+      h2 {
+        margin-bottom: 30px;
+      }
+      p {
+        line-height: 1.8;
+      }
+    }
+    ul {
+      margin-top: 10px;
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      // border: 2px solid red;
+      gap: 5px;
+      li {
+        border: 1px solid white;
+        padding: 10px;
+      }
     }
   }
 }
