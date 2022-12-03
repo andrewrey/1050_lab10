@@ -17,6 +17,17 @@ header {
   position: relative;
   z-index: -2;
 }
+header .header__card {
+  width: 400px;
+  background-color: white;
+  padding: 15px;
+  height: 300px;
+  position: absolute;
+  bottom: -230px;
+  right: -400px;
+  border-radius: 50px;
+  box-shadow: 3px 4px 8px 3px rgba(103, 103, 103, 0.25);
+}
 header .flex__wrap {
   display: flex;
   justify-content: center;
